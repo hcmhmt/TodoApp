@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.FragmentUpdateTodo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tw_fragmentUpdateTodo_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_red"
+            android:padding="20dp"
+            android:text="İptal"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/sp_fragmentUpdateTodo_todo_color"
+            app:layout_constraintTop_toTopOf="@+id/tw_fragmentUpdateTodo_UpdateTodo" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Etkinlik Güncelle"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_fragmentUpdateTodo_title"
+            app:layout_constraintStart_toStartOf="@+id/et_fragmentUpdateTodo_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinlik Adı"
+            android:textColor="@color/dof"
+            app:layout_constraintBottom_toTopOf="@+id/et_fragmentUpdateTodo_title"
+            app:layout_constraintStart_toStartOf="@+id/et_fragmentUpdateTodo_title" />
+
+        <EditText
+            android:id="@+id/et_fragmentUpdateTodo_title"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border_red"
+            android:ems="10"
+            android:hint="Etkinlik Adı"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/et_fragmentUpdateTodo_tag"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/border_red"
+            android:ems="10"
+            android:hint="Etkinlik Etiketi"
+            android:textColor="#000000"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_fragmentUpdateTodo_title"
+            app:layout_constraintStart_toStartOf="@+id/et_fragmentUpdateTodo_title"
+            app:layout_constraintTop_toBottomOf="@+id/et_fragmentUpdateTodo_title" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinlik Kategorisi"
+            android:textColor="@color/dof"
+            app:layout_constraintBottom_toTopOf="@+id/sp_fragmentUpdateTodo_todo_category"
+            app:layout_constraintStart_toStartOf="@+id/sp_fragmentUpdateTodo_todo_category" />
+
+        <Spinner
+            android:id="@+id/sp_fragmentUpdateTodo_todo_category"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_red"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/sp_fragmentUpdateTodo_todo_status"
+            app:layout_constraintTop_toBottomOf="@+id/sp_fragmentUpdateTodo_todo_status" />
+
+        <Spinner
+            android:id="@+id/sp_fragmentUpdateTodo_todo_status"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_red"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/tw_fragmentUpdateTodo_time"
+            app:layout_constraintStart_toStartOf="@+id/tw_fragmentUpdateTodo_time"
+            app:layout_constraintTop_toBottomOf="@+id/tw_fragmentUpdateTodo_time" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinlik Etiketi"
+            android:textColor="@color/dof"
+            app:layout_constraintBottom_toTopOf="@+id/et_fragmentUpdateTodo_tag"
+            app:layout_constraintStart_toStartOf="@+id/et_fragmentUpdateTodo_tag" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinlik Tarihi"
+            android:textColor="@color/dof"
+            app:layout_constraintBottom_toTopOf="@+id/tw_fragmentUpdateTodo_time"
+            app:layout_constraintStart_toStartOf="@+id/tw_fragmentUpdateTodo_time" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamamlandı mı?"
+            android:textColor="@color/dof"
+            app:layout_constraintBottom_toTopOf="@+id/sp_fragmentUpdateTodo_todo_status"
+            app:layout_constraintStart_toStartOf="@+id/sp_fragmentUpdateTodo_todo_status" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinlik Çerçeve Rengi"
+            android:textColor="@color/dof"
+            app:layout_constraintBottom_toTopOf="@+id/sp_fragmentUpdateTodo_todo_color"
+            app:layout_constraintStart_toStartOf="@+id/sp_fragmentUpdateTodo_todo_color" />
+
+        <Spinner
+            android:id="@+id/sp_fragmentUpdateTodo_todo_color"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_red"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/tw_fragmentUpdateTodo_time"
+            app:layout_constraintTop_toTopOf="@+id/sp_fragmentUpdateTodo_todo_category" />
+
+        <TextView
+            android:id="@+id/tw_fragmentUpdateTodo_UpdateTodo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border_red"
+            android:textColor="#000000"
+            android:padding="20dp"
+            android:text="Güncelle"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/sp_fragmentUpdateTodo_todo_category"
+            app:layout_constraintTop_toBottomOf="@+id/sp_fragmentUpdateTodo_todo_category" />
+
+        <TextView
+            android:id="@+id/tw_fragmentUpdateTodo_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_red"
+            android:padding="10dp"
+            android:text="Etkinlik Tarihi"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_fragmentUpdateTodo_tag"
+            app:layout_constraintStart_toStartOf="@+id/et_fragmentUpdateTodo_tag"
+            app:layout_constraintTop_toBottomOf="@+id/et_fragmentUpdateTodo_tag" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

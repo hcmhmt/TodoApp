@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/dof</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="mcv_selectionColor">@color/dof</item>
+        <item name="mcv_headerTextAppearance">@style/mhmt</item>
+        <item name="mcv_weekDayTextAppearance">@style/mhmt</item>
+        <item name="mcv_weekDayLabels">@style/mhmt</item>
+        <item name="mcv_dateTextAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="mhmt" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/black</item>
+        <item name="colorPrimary">@color/dof</item>
+        <item name="colorPrimaryDark">@color/dof</item>
+        <item name="colorAccent">@color/dof</item>
+    </style>
+
+    <style name="alertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="colorPrimary">@color/dof</item>
+        <item name="colorPrimaryDark">@color/dof</item>
+        <item name="colorAccent">@color/dof</item>
+        <item name="fontFamily">@font/montserrat</item>
+
+    </style>
+
+</resources>
